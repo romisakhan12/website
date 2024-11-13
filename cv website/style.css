@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+text-decoration: none;
+}
+header{
+    height: 200px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: larger;
+    background-color: deeppink;
+    animation-name:for_header ;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-delay: 0.1s; 
+}
+@keyframes for_header{
+    from{
+        height:1000px;
+
+    }
+    to{
+        height: 200px;
+    }
+}
+
+nav {
+    background-color: rgb(116, 46, 255);
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    text-shadow:0 0 10px deeppink;
+    font-size: x-large;
+    font-weight: 700;
+    
+
+}
+nav a{
+    color: aliceblue;
+}
+nav a:hover{
+    cursor: pointer;
+    color: black;
+}
+main{
+    display: flex;
+    background-color: black;
+
+}
+.intro{
+    color: white; 
+    margin-top: 250px;
+    margin-left:50px;
+    margin-bottom: 200px;
+    font-family:'Brush Script MT', cursive;
+
+}
+footer{
+    height: 100px;
+    padding: 35px;
+    background-color: rgb(7, 205, 255);
+    text-decoration: none;
+}
+img{
+    height: 400px;
+    display: flex;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-top: 180px;
+    margin-left: 30px;
+}
+button{
+    margin-top: 20px;
+    margin-left: 180px;
+
+}
+main div span button a {
+    text-decoration: none;
+   
+}
+span{
+    color: pink;
+    text-shadow:0 0 10px deeppink;
+}
+.bigbutton{
+    border: 3px solid deeppink;
+    padding: 10px 20px;
+font-size: x-large;
+font-weight: 600;
+font-family:'Brush Script MT', cursive;
+}
+.bigbutton:hover{
+    cursor:pointer;
+    border-color: blueviolet;
+}
+  @media (max-width:890px) and (min-width:436px){
+    nav{
+        flex-direction: column;
+        height: 150px;
+    }
+    main{
+flex-direction: column;
+    }
+footer{
+    flex-direction: column;
+}
+  }
+  #social{
+    display: flex;
+    justify-content: space-around;
+  }
+
